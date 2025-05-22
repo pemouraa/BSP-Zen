@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="plano.css">
   <title>Planos</title>
-
 </head>
 <body>
   <div class="container">
@@ -28,13 +27,23 @@
         <li><span>✔</span> Sons satisfatórios</li>
         <li><span>✔</span> Sem anúncios</li>
       </ul>
-      <button class="btao premium" onclick="selecionarPlano('Premium')">Escolher</button>
+      <button class="btao premium" onclick="mostrarModalPagamento()">Escolher</button>
     </div>
+  </div>
 
-    
+  <!-- Modal de Pagamento -->
+  <div id="modalPagamento" class="modal">
+    <div class="modal-conteudo">
+      <span class="fechar">&times;</span>
+      <h2>Escolha a Forma de Pagamento</h2>
+      <div class="opcoes-pagamento">
+        <button class="opcao-pagamento" onclick="selecionarPagamento('Pix')">Pix</button>
+        <button class="opcao-pagamento" onclick="selecionarPagamento('Cartão de Débito')">Cartão de Débito</button>
+        <button class="opcao-pagamento" onclick="selecionarPagamento('Cartão de Crédito')">Cartão de Crédito</button>
+      </div>
+    </div>
   </div>
 
   <script src="plano.js"></script>
-
 </body>
 </html>
