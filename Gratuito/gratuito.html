@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ansiedade</title>
+  <link rel="stylesheet" href="gratuito.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="flex space-x-4 mb-8">
+    <button id="botaoCaneta" class="botao">Caneta</button>
+    <button id="botaoPlasticoBolha" class="botao">Bolha de Plástico</button>
+    <button id="botaoInterruptor" class="botao">Interruptor</button>
+  </div>
+
+  <div id="objectContainer" class="objeto">
+  </div>
+
+  <div id="secaoCompra" class="hidden">
+    <p>Gostou do objeto? Clique aqui para comprá-lo</p>
+    <button id="botaoComprar" class="comprar">COMPRAR</button>
+  </div>
+
+  <audio id="somCaneta" src="../Sons/SomCaneta.mp3"></audio>
+  <audio id="somPlasticoBolha" src="../Sons/SompBolha.mp3"></audio>
+  <audio id="somInterruptor" src="../Sons/SomInterruptor.mp3"></audio>
+
+  <script src="gratuito.js"></script>
+</body>
+</html>

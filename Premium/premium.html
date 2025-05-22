@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ansiedade Premium</title>
+  <link rel="stylesheet" href="premium.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="flex space-x-4 mb-8">
+    <button id="botaoCaneta" class="botao">Caneta</button>
+    <button id="botaoPlasticoBolha" class="botao">Plástico Bolha</button>
+    <button id="botaoInterruptor" class="botao">Interruptor</button>
+    <button id="botaoZiper" class="botao">Zíper</button>
+    <button id="botaoCadeado" class="botao">Cadeado</button>
+    <button id="botaoIsqueiro" class="botao">Isqueiro</button>
+    <button id="botaoTesoura" class="botao">Tesoura</button>
+  </div>
+
+  <div id="containerObjeto" class="objetoDisplay">
+  </div>
+
+  <div id="secaoCompra" class="hidden">
+    <p>Gostou do objeto? Clique aqui para comprá-lo</p>
+    <button id="botaoComprar" class="botaoCompra">COMPRAR</button>
+  </div>
+
+  <audio id="somCaneta" src="../Sons/SomCaneta.mp3"></audio>
+  <audio id="somPlasticoBolha" src="../Sons/SompBolha.mp3"></audio>
+  <audio id="somInterruptor" src="../Sons/SomInterruptor.mp3"></audio>
+  <audio id="somZiper" src="../Sons/SomZiper.mp3"></audio>
+  <audio id="somCadeado" src="../Sons/SomCadeado.mp3"></audio>
+  <audio id="somIsqueiro" src="../Sons/SomIsqueiro.mp3"></audio>
+  <audio id="somTesoura" src="../Sons/SomTesoura.mp3"></audio>
+
+  <script src="premium.js"></script>
+</body>
+</html>

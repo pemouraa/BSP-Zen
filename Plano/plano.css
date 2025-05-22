@@ -1,0 +1,87 @@
+body {
+    background-color: #6384e0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 98%;
+}
+.carta {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+.carta:hover {
+    transform: translateY(-5px);
+}
+.carta h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+}
+.carta p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+.carta p span {
+    font-size: 1.25rem;
+}
+.carta ul {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    list-style: none;
+    padding: 0;
+}
+.carta ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+.carta ul li span {
+    color: #22c55e;
+    margin-right: 0.75rem;
+}
+.btao {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.75rem;
+    font-size: 1.25rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.btao.premium {
+    background-color: #eab308;
+}
+.btao:hover {
+    filter: brightness(1.15);
+}
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+    .carta {
+        width: 45%;
+    }
+}
