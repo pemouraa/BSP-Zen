@@ -31,6 +31,21 @@ img {
 .botao:hover {
     background-color: #e5e7eb;
 }
+.botaoVoltar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #4488ef; /* Vermelho */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem; 
+    border: 2px solid #ffffff; 
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.2s;
+}
+.botaoVoltar:hover {
+    transform: scale(1.05); 
+}
 .botaoCompra {
     background-color: #22c55e; 
     color: white;

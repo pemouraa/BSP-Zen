@@ -1,3 +1,4 @@
+const botaoVoltar = document.getElementById('botaoVoltar');
 const botaoCaneta = document.getElementById('botaoCaneta');
 const botaoPlasticoBolha = document.getElementById('botaoPlasticoBolha');
 const botaoInterruptor = document.getElementById('botaoInterruptor');
@@ -15,6 +16,11 @@ const somIsqueiro = document.getElementById('somIsqueiro');
 const somTesoura = document.getElementById('somTesoura');
 const secaoCompra = document.getElementById('secaoCompra');
 const botaoComprar = document.getElementById('botaoComprar');
+let objetoAtual;
+
+botaoVoltar.addEventListener('click', () => {
+    window.location.href = '../Plano/plano.html';
+});
 
 function limparContainer() {
     containerObjeto.innerHTML = '';
