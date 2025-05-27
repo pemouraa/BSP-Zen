@@ -5,63 +5,99 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 20px;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
 }
+
 img {
-    max-width: 500px;
+    width: 100%;
+    max-width: min(500px, 90vw);
     height: auto;
 }
+
 #secaoCompra {
     position: fixed;
-    bottom: 20px;
-    left: 20px;
+    bottom: 1rem;
+    left: 1rem;
     color: white;
-    font-size: 16px;
+    font-size: clamp(14px, 4vw, 16px);
+    padding: 0.5rem;
 }
+
 .botao {
     background-color: white;
     color: #1e3a8a;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    font-size: clamp(14px, 3.5vw, 16px);
 }
+
 .botao:hover {
     background-color: #e5e7eb;
 }
+
 .botaoVoltar {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: #4488ef; /* Vermelho */
+    background-color: #4488ef;
     color: white;
     padding: 0.75rem 1.5rem;
-    border-radius: 0.25rem; 
-    border: 2px solid #ffffff; 
+    border-radius: 0.25rem;
+    border: 2px solid #ffffff;
     font-weight: bold;
     transition: background-color 0.2s, transform 0.2s;
+    font-size: clamp(14px, 4vw, 16px);
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
 }
+
 .botaoVoltar:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
+
 .botaoCompra {
-    background-color: #22c55e; 
+    background-color: #22c55e;
     color: white;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     margin-top: 0.5rem;
-    transition: background-color 0.2s;
+    font-size: clamp(14px, 4vw, 16px);
 }
+
 .botaoCompra:hover {
-    background-color: #16a34a; 
+    background-color: #16a34a;
 }
+
 .objetoDisplay {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem 0;
+}
+
+.flex.space-x-4.mb-8 {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+    .botaoVoltar {
+        position: static;
+        margin: 0 auto 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #secaoCompra {
+        bottom: 0.5rem;
+        left: 0.5rem;
+        font-size: clamp(12px, 3.5vw, 14px);
+    }
+
+    img {
+        max-width: 80vw;
+    }
 }
